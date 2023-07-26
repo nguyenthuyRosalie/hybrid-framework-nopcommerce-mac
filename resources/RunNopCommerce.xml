@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce UI Automation">
+	<test name="Run on Chrome">
+		<classes>
+			<class name="com.nopcommerce.user.Level_01_Register" />
+		</classes>
+	</test>
+</suite> 
