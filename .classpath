@@ -13,5 +13,9 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="libSelenium/testng-6.14.3.jar" sourcepath="libSelenium/testng-6.14.3-sources.jar"/>
 	<classpathentry kind="lib" path="libSelenium/selenium-server-4.11.0.jar"/>
+	<classpathentry kind="lib" path="libAssertJ/assertj-core-3.24.2.jar"/>
+	<classpathentry kind="lib" path="libAssertJ/byte-buddy-1.12.21.jar"/>
+	<classpathentry kind="lib" path="libLog4jver2/log4j-api-2.19.0.jar"/>
+	<classpathentry kind="lib" path="libLog4jver2/log4j-core-2.19.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

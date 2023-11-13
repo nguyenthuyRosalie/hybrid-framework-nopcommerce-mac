@@ -2,8 +2,8 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import PageUIs.RegisterPageUI;
 import commons.BasePage;
+import pageUI.user.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage {
 	private WebDriver driver;
@@ -44,9 +44,10 @@ public class RegisterPageObject extends BasePage {
 		return getElementText(driver, RegisterPageUI.PASSWORD_ERROR_MESSAGE);
 	}
 
-	public void clickToHomePageLogo() {
+	public HomePageObject clickToHomePageLogo() {
 		waitForElementClickable(driver, RegisterPageUI.HOME_PAGE_LOGO_IMAGE);
 		clickToElement(driver, RegisterPageUI.HOME_PAGE_LOGO_IMAGE);
+		return PageGeneratorManage.getHomePage(driver);
 	}
 
 	public void enterToFirstNameTextbox(String firstName) {

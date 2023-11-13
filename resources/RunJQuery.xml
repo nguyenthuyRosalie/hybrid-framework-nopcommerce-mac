@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Handele DataTable - Table Grid">
+
+	<parameter name="userUrl" value="" />
+	<parameter name="adminUrl" value="" />
+
+	<parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/" />
+	<test name="Run on Edge">
+		<parameter name="browser" value="Edge" />	
+		<classes>
+			<class name="com.jquery.upload.Level_14_Upload_File" />
+		</classes>
+	</test>
+
+
+</suite> 
+	

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd	">
 <suite parallel="false" name="NopCommerce UI Automation">
 
-	<parameter name="url" value="https://demo.nopcommerce.com/" />
+<listeners>
+	<listener class-name="commons.MethodListener"/>
+</listeners>
+
+	<parameter name="userUrl" value="" />
+	<parameter name="adminUrl" value="" />
 
 
-	<test name="Run on Chrome">
-		<parameter name="browser" value="Chrome" />
+	<test name="Run on Edge">
+		<parameter name="browser" value="Edge" />	
 		<classes>
-			<class name="com.nopcommerce.user.Level_05_Page_Factory" />
+			<class name="com.nopcommerce.user.Topic_16_Log" />
 		</classes>
 	</test>
 
-	<test name="Run on Firefox">
-		<parameter name="browser" value="Firefox" />
-		<classes>
-			<class name="com.nopcommerce.user.Level_04_Page_Multiple_Browser" />
-		</classes>
-		>
-	</test>
 
 </suite> 
